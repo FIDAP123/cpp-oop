@@ -5,19 +5,19 @@
             prosedural
         b.  karena dengan OOP kita bisa membuat aplikasi yang kompleks dengan memanfaatkan konsep class dan object 
             didalamnya
-        c.  Didalam class harus ditambahkan parameter public, private, protected
-        d.  Didalam class bisa terdapat data member dan data function / method atau fungsi
+        c.  Didalam class harus ditambahkan hakakses seperti public, private, protected
+        d.  Didalam hakakses bisa terdapat data member dan data function / method atau fungsi
 */
 
 #include<iostream>
 
 class Orang
 {
-public:
+public://agar data dalam class bisa diakses kelas mana saja dan siapa saja
     std::string nama;
-private:
+private://agar data dalam class hanya bisa diakses yang ada di dalam class saja
     std::string alamat;
-protected:
+protected://agar data dalam class hanya bisa diakses didalam class dan class yang meng-inheritance class ini
     std::string gender;
 };
 
